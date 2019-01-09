@@ -1,0 +1,16 @@
+D:\DO IT\StudyAccountSystem\DataAccessLayer\obj\Debug\DataAccessLayer.csprojAssemblyReference.cache
+D:\DO IT\StudyAccountSystem\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\DO IT\StudyAccountSystem\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+D:\DO IT\StudyAccountSystem\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+D:\DO IT\StudyAccountSystem\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+D:\DO IT\StudyAccountSystem\DataAccessLayer\bin\Debug\EntityFramework.dll
+D:\DO IT\StudyAccountSystem\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\DO IT\StudyAccountSystem\DataAccessLayer\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\DO IT\StudyAccountSystem\DataAccessLayer\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\DO IT\StudyAccountSystem\DataAccessLayer\bin\Debug\EntityFramework.xml
+D:\DO IT\StudyAccountSystem\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\DO IT\StudyAccountSystem\DataAccessLayer\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\DO IT\StudyAccountSystem\DataAccessLayer\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\DO IT\StudyAccountSystem\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
+D:\DO IT\StudyAccountSystem\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+D:\DO IT\StudyAccountSystem\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
