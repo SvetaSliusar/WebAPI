@@ -97,11 +97,6 @@ namespace BusinessAccessLayer.Services
             return CreateAsync(user, user.Password);
         }
 
-        public void Dispose()
-        {
-            DataBase.Dispose();
-        }
-
         public Task<UserBLL> FindAsync(string userName, string password)
         {
             return _mapper.Map<Task<UserBLL>>(DataBase.UserManager.FindAsync(userName, password));
@@ -125,6 +120,11 @@ namespace BusinessAccessLayer.Services
         public Task<UserBLL> FindAsync(UserLoginInfo userLoginInfo)
         {
             return _mapper.Map<Task<UserBLL>>(DataBase.UserManager.FindAsync(userLoginInfo));
+        }
+
+        public void Dispose()
+        {
+            DataBase.Dispose();
         }
     }
 }

@@ -22,3 +22,5 @@ D:\DO IT\StudyAccountSystem\BusinessAccessLayer\obj\Debug\BusinessLogicLayer.csp
 D:\DO IT\StudyAccountSystem\BusinessAccessLayer\obj\Debug\BusinessLogicLayer.csproj.CopyComplete
 D:\DO IT\StudyAccountSystem\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.dll
 D:\DO IT\StudyAccountSystem\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.pdb
+D:\DO IT\StudyAccountSystem\BusinessAccessLayer\bin\Debug\GemBox.Spreadsheet.dll
+D:\DO IT\StudyAccountSystem\BusinessAccessLayer\bin\Debug\GemBox.Spreadsheet.xml

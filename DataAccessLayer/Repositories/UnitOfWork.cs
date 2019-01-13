@@ -15,7 +15,7 @@ namespace DataAccessLayer.Repositories
         ApplicationUserManager _userManager;
         ApplicationRoleManager _roleManager;
 
-        IRepository<string, ProgrammerProfile> _programmerProfiles;
+        IProgrammerRepository _programmerProfiles;
         IRepository<int, Skill> _skills;
         IRepository<int, SkillCategory> _skillCategories;
         
@@ -42,7 +42,7 @@ namespace DataAccessLayer.Repositories
                 return _roleManager;
             }
         }
-        public IRepository<string, ProgrammerProfile> ProgrammerManager
+        public IProgrammerRepository ProgrammerManager
         {
             get
             {

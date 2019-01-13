@@ -146,3 +146,5 @@ D:\DO IT\StudyAccountSystem\WebApiUI\bin\Ninject.xml
 D:\DO IT\StudyAccountSystem\WebApiUI\bin\Ninject.Web.Common.xml
 D:\DO IT\StudyAccountSystem\WebApiUI\bin\Microsoft.Owin.Cors.dll
 D:\DO IT\StudyAccountSystem\WebApiUI\bin\Microsoft.Owin.Cors.xml
+D:\DO IT\StudyAccountSystem\WebApiUI\bin\GemBox.Spreadsheet.dll
+D:\DO IT\StudyAccountSystem\WebApiUI\bin\GemBox.Spreadsheet.xml

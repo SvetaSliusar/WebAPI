@@ -9,7 +9,7 @@ namespace DataAccessLayer.Interfaces
     {
         ApplicationUserManager UserManager { get;}
         ApplicationRoleManager RoleManager { get; }
-        IRepository<string, ProgrammerProfile> ProgrammerManager { get;}
+        IProgrammerRepository ProgrammerManager { get;}
         IRepository<int, Skill> Skills { get;}
         IRepository<int, SkillCategory> SkillCategories { get; }
         void Save();

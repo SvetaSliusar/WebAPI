@@ -13,6 +13,7 @@ namespace WebApiUI
             Bind<IUnitOfWork>().To<UnitOfWork>().WithConstructorArgument("DefaultConnection");
             Bind<ISkillService>().To<SkillService>();
             Bind<IProgrammerService>().To<ProgrammerService>();
+            Bind<IReportService>().To<ReportService>();
         }
     }
 }

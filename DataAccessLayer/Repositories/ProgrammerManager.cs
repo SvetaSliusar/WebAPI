@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Repositories
 {
-    public class ProgrammerManager : IRepository<string, ProgrammerProfile>
+    public class ProgrammerManager : IProgrammerRepository
     {
         SystemDbContext _dbContext;
 
@@ -42,11 +42,6 @@ namespace DataAccessLayer.Repositories
         public void Update(ProgrammerProfile item)
         {
             _dbContext.Entry(item).State = EntityState.Modified;
-            if (item.SkillRates != null)
-            {
-                foreach (var rate in item.SkillRates)
-                    _dbContext.Entry(rate).State = EntityState.Modified;
-            }
         }
 
         public void Delete(string id)
@@ -60,6 +55,17 @@ namespace DataAccessLayer.Repositories
         public IEnumerable<ProgrammerProfile> Find(Func<ProgrammerProfile, bool> predicate)
         {
             return _dbContext.ProgrammerProfiles.Where(predicate);
+        }
+
+        public void UpdateProgrammerSkillRate(SkillRate skillRate)
+        {
+            _dbContext.Entry(skillRate).State = EntityState.Modified;
+        }
+
+        public void CreateProgrammerSkillRate(SkillRate skillRate)
+        {
+            _dbContext.SkillRates.Add(skillRate);
+            _dbContext.SaveChanges();
         }
     }
 }

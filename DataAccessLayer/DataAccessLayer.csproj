@@ -59,6 +59,7 @@
     <Compile Include="EF\SystemDbContext.cs" />
     <Compile Include="Identity\ApplicationRoleManager.cs" />
     <Compile Include="Identity\ApplicationUserManager.cs" />
+    <Compile Include="Interfaces\IProgrammerRepository.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Models\ApplicationRole.cs" />

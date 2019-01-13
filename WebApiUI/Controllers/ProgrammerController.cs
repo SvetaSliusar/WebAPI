@@ -41,9 +41,10 @@ namespace WebApiUI.Controllers
             return _mapper.Map<IEnumerable<SkillRateDTO>>(_programmerService.GetSkillRates(userName));
         }
 
+        [Route("")]
         public IEnumerable<ProgrammerDTO> GetALL()
         {
-            return _mapper.Map<IEnumerable<ProgrammerDTO>>(_programmerService.GetAllProgrammers());
+             return _mapper.Map<IEnumerable<ProgrammerDTO>>(_programmerService.GetAllProgrammers());
         }
     }
 }

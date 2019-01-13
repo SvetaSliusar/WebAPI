@@ -28,7 +28,7 @@ namespace BusinessAccessLayer.Services
         public IEnumerable<SkillBLL> GetSkills(string category)
         {
             var skills = DataBase.SkillCategories.GetAll().First(c => c.Name == category).Skills;
-            return skills.Select(skill=>new SkillBLL { Name=skill.Name, Category=skill.SkillCategory.Name});
+            return skills.Select(skill=>new SkillBLL {Id = skill.Id, Name=skill.Name, Category=skill.SkillCategory.Name});
         }
 
         public IEnumerable<string> GetSkillCategories()

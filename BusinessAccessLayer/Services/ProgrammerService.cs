@@ -25,21 +25,25 @@ namespace BusinessAccessLayer.Services
                 .ForMember(dst => dst.Category, opt => opt.MapFrom(src => src.SkillCategory.Name));
                 cfg.CreateMap<ProgrammerProfile, ProgrammerBLL>()
                 .ForMember(dst => dst.UserName, opt => opt.MapFrom(src => src.ApplicationUser.UserName));
-                cfg.CreateMap<SkillRate, SkillRateBLL>();
+                cfg.CreateMap<SkillRateBLL, SkillRate>();
             }
             ));
         }
 
         public void AddSkillRates(string userName, List<SkillRateBLL> skillRates)
-        {
+        {         
             ApplicationUser user = DataBase.UserManager.Users.First((data) => data.UserName == userName);
             var programmer = DataBase.ProgrammerManager.Get(user.Id);
-            foreach(var rate in skillRates)
+            foreach (var rate in skillRates)
             {
-                programmer.SkillRates.Add(_mapper.Map<SkillRate>(rate));
-            }
-            DataBase.ProgrammerManager.Update(programmer);
-            DataBase.Save();
+                var rateDAL = new SkillRate()
+                {
+                    UserId = programmer.Id,
+                    SkillId = rate.Skill.Id,
+                    Level = rate.Level
+                };
+                DataBase.ProgrammerManager.CreateProgrammerSkillRate(rateDAL);
+            }           
         }
 
         public IEnumerable<SkillRateBLL> GetSkillRates(string userName)
